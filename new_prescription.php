@@ -100,10 +100,10 @@ elseif (isset($_GET['phone']))
             $sql = "SELECT * FROM `medicines`;";
             $result = mysqli_query($conn, $sql);
          
-            echo "<select name=\"medicines\" class=\"col-sm-2 \">";
+            echo '<select name="medicine" class=\"col-sm-2 \">';
             echo "<option value='None'>select a medicine </option>";
             while ($row = mysqli_fetch_assoc($result)) {
-                echo "<option value='" . $row['name'] . "'>" . $row['name'] . "</option>";
+                echo "<option value=\"" . $row['name'] . "\">" . $row['name'] . "</option>";
             }
             echo "</select>";
         ?>

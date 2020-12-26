@@ -28,7 +28,7 @@ include 'header.php';
         
             echo '<div class="prescriptions"><div style="width:30%; padding:10px;float:left;">';
             
-            echo "<div style=\"width:60%; padding:10px;float:left;\"><bold> <a href=\"patient.php?time=" . $row['time'] . "\"> Prescription of date :  " . date("l d/m/Y ", strtotime($row["time"])). "  </a></bold></p>";
+            echo "<div style=\"width:60%; padding:10px;float:left;\"><bold> <a href=\"view_prescription.php?time=" . $row['time'] . "\"> Prescription of date :  " . date("l d/m/Y ", strtotime($row["time"])). "  </a></bold></p>";
             echo '</div></div>';
         }
     }
