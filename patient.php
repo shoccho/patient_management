@@ -25,5 +25,8 @@ echo'<div style="padding-left:100px;">';
         echo "404 the page you requested can not be found!";
     }
 echo'<div>';
+
+echo "<a href=\"edit_patient.php?id=" .$patient_id. "\">Edit </a>";
+
 include 'footer.php';
 ?>

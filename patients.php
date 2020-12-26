@@ -12,4 +12,4 @@
         echo "<div style=\"width:60%; padding:10px;float:left;\"><bold> <a href=\"patient.php?id=" . $row['id'] . "\">  " . $row['full_name'] . "  </a></bold></p>";
         echo '</div></div>';
     }
-    ?>
+?>
