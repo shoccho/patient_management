@@ -11,7 +11,7 @@ if (isset($_SESSION['username'])) {
 
 <?php
 if ($loggedin) {
-    echo "<div style=\"width:100%; text-align:center; padding:10px; margin:10px;\"><h4> Welcome to your portal " . $_SESSION['username'] . "  </h4>";
+    echo "<div style=\"width:100%; text-align:center; padding:10px; margin:10px;\"><h4> Welcome to your portal <a href=\"profile.php\" >" . $_SESSION['username'] . " </a> </h4>";
 } else {
 
     header('Location: login.php');
